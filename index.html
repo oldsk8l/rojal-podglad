@@ -220,6 +220,13 @@ legend{font-weight:600;font-size:15px;margin-bottom:6px;padding:0}
 .suwak #suwak-old{clip-path:inset(0 50% 0 0)}
 .suwak::after{content:"";position:absolute;top:0;bottom:0;left:var(--x,50%);width:3px;background:var(--yellow);transform:translateX(-50%);pointer-events:none}
 .suwak input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+/* prawdziwe zdjęcia z Facebooka Rojala (26.11), do podmiany na pliki od zakładu */
+.suwak{aspect-ratio:440/760;max-width:380px}
+.suwak .ph.old{background:url(zdjecia/renowacja-przed.jpg) center/cover no-repeat}
+.suwak .ph.new{background:url(zdjecia/renowacja-po.jpg) center/cover no-repeat}
+.cal{background:url(zdjecia/kalendarz-2027.jpg) center/cover no-repeat;aspect-ratio:503/713;box-shadow:0 18px 40px rgba(0,0,0,.18)}
+.cal span{display:none}
+.wnetrze{display:block;width:100%;max-height:360px;object-fit:cover;border-radius:12px;margin-bottom:30px}
 .sw-l,.sw-r{position:absolute;top:10px;font:500 11px/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;background:rgba(0,0,0,.55);color:#fff;padding:6px 8px;border-radius:4px;pointer-events:none}
 .sw-l{left:10px}.sw-r{right:10px}
 .obietnica{border-left:3px solid var(--yellow);padding-left:12px;margin:22px 0 0;color:#e9e9ee}
@@ -257,7 +264,7 @@ legend{font-weight:600;font-size:15px;margin-bottom:6px;padding:0}
 </head>
 <body>
 
-<div class="note"><div class="wrap">Projekt strony, wersja z odpowiedziami z 26.11. Na <span class="todo">żółtym tle</span> zostało to, na co czekamy: cennik odbitek, zdjęcia prac i sklepu. Logo wstawione ze zrzutu, podmienimy na Wasz plik.</div></div>
+<div class="note"><div class="wrap">Projekt strony, wersja z odpowiedziami z 26.11. Na <span class="todo">żółtym tle</span> zostało to, na co czekamy (cennik odbitek, koszt wysyłki). Logo i zdjęcia wzięliśmy z Waszego Facebooka, podmienimy je na Wasze pliki.</div></div>
 
 <header>
   <div class="wrap nav">
@@ -396,7 +403,7 @@ legend{font-weight:600;font-size:15px;margin-bottom:6px;padding:0}
         <span class="sw-l">Przed</span><span class="sw-r">Po</span>
         <input type="range" id="suwak-in" min="0" max="100" value="50" aria-label="Przesuń, aby porównać">
       </div>
-      <p class="small" style="margin-top:10px">Przesuń suwak. Tu wstawimy prawdziwe prace Rojala (za zgodą klientów). <span class="todo">zdjęcia przed/po</span></p>
+      <p class="small" style="margin-top:10px">Przesuń suwak: to jedna z naszych prac, przed renowacją i po niej.</p>
       <div class="wycena" id="wycena">
         <h3>Wycena indywidualna</h3>
         <p class="small" style="color:var(--ink)">Każde zdjęcie jest inne, więc cenę podajemy po jego obejrzeniu. Wycena jest bezpłatna i do niczego nie zobowiązuje.</p>
@@ -484,12 +491,12 @@ legend{font-weight:600;font-size:15px;margin-bottom:6px;padding:0}
 
 <section id="sklep" style="padding-top:0">
   <div class="wrap shop">
-    <div class="cal" role="img" aria-label="Kalendarz Leszno na starych pocztówkach"><span>Leszno na starych pocztówkach<br>Kalendarz 2027</span></div>
+    <div class="cal" role="img" aria-label="Kalendarz Leszno na starych pocztówkach 2027, okładka"><span>Leszno na starych pocztówkach<br>Kalendarz 2027</span></div>
     <div>
       <div class="sec-head">
         <p class="eyebrow">Sklep fotograficzny</p>
         <h2>Kalendarz z dawnym Lesznem, ramki i drobiazgi na prezent</h2>
-        <p>Co roku wydajemy kalendarz „Leszno na starych pocztówkach” (A3, 12 stron). Kupisz go w sklepie albo zamówisz z wysyłką, także jako prezent dla rodziny spoza Leszna. Kalendarz 2027: <b>39 zł</b>.</p>
+        <p>Co roku wydajemy kalendarz „Leszno na starych pocztówkach” (A3, 13 stron, w dwóch wersjach: czarno-białej i koloryzowanej). Kupisz go w sklepie albo zamówisz z wysyłką, także jako prezent dla rodziny spoza Leszna. Kalendarz 2027: <b>39 zł</b>.</p>
       </div>
       <ul class="goods">
         <li>ramki do zdjęć</li><li>antyramy</li><li>albumy</li><li>filmy do aparatów</li><li>lornetki, także dziecięce</li><li>popularne baterie</li><li>baterie do aparatów słuchowych</li><li>baterie do pilotów samochodowych i bram</li>
@@ -545,6 +552,7 @@ legend{font-weight:600;font-size:15px;margin-bottom:6px;padding:0}
 </main>
 
 <section id="kontakt" class="contact">
+  <div class="wrap"><img class="wnetrze" src="zdjecia/sklep-wnetrze.jpg" alt="Wnętrze sklepu Rojal w Lesznie: ramki, albumy i stanowisko do zdjęć" loading="lazy"></div>
   <div class="wrap cgrid">
     <div><h3>Adres</h3><p>Sklep Foto Usługi Rojal<br>ul. Bohaterów Westerplatte 15<br>64-100 Leszno</p><p style="margin-top:10px"><a href="https://www.google.com/maps/search/?api=1&query=Bohater%C3%B3w+Westerplatte+15+Leszno" style="color:var(--yellow)">Pokaż na mapie</a></p></div>
     <div><h3>Godziny</h3><p>poniedziałek–piątek 9:00–18:00<br>sobota 9:00–13:00</p></div>
