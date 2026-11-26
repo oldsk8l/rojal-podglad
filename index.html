@@ -1,0 +1,681 @@
+<!doctype html>
+<html lang="pl">
+<head>
+<meta charset="utf-8">
+<meta name="robots" content="noindex, nofollow">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Rojal Leszno · zdjęcia do dokumentów, renowacja zdjęć, odbitki</title>
+<meta name="description" content="Zakład fotograficzny Rojal (Kodak Express) w Lesznie, ul. Bohaterów Westerplatte 15. Zdjęcia do dowodu, paszportu i wszystkich dokumentów od ręki, także w wersji cyfrowej. Renowacja starych zdjęć z wysyłką w całej Polsce, odbitki, przegrywanie kaset.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=Inter:wght@400;500;600&family=IBM+Plex+Mono:wght@500&display=swap" rel="stylesheet">
+<script type="application/ld+json">
+{
+  "@context": "https://schema.org",
+  "@type": "PhotographyBusiness",
+  "name": "Rojal Kodak Express Leszno",
+  "alternateName": ["Ro-Ja-L Kodak Express", "Rojal sklep fotograficzny Leszno"],
+  "telephone": "+48 792 030 492",
+  "email": "rojal@onet.pl",
+  "address": {"@type": "PostalAddress", "streetAddress": "ul. Bohaterów Westerplatte 15", "postalCode": "64-100", "addressLocality": "Leszno", "addressCountry": "PL"},
+  "openingHoursSpecification": [
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"], "opens": "09:00", "closes": "18:00"},
+    {"@type": "OpeningHoursSpecification", "dayOfWeek": "Saturday", "opens": "09:00", "closes": "13:00"}
+  ],
+  "areaServed": ["Leszno", "Polska"],
+  "makesOffer": [
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Zdjęcia do dowodu, paszportu i dokumentów"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Renowacja i retusz starych zdjęć z wysyłką w całej Polsce"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Odbitki i wywoływanie zdjęć"}},
+    {"@type": "Offer", "itemOffered": {"@type": "Service", "name": "Przegrywanie kaset wideo"}}
+  ]
+}
+</script>
+<style>
+/* Układ: ciemny pas „ciemni” na górze, potem jasne sekcje usług; jedna oś czytania, karty tylko tam, gdzie wybiera się usługę. */
+:root{
+  --ink:#16171c;        /* tekst, ciemnia */
+  --paper:#f6f6f3;      /* tło: papier fotograficzny */
+  --card:#ffffff;
+  --line:#dcdcd6;
+  --muted:#5c5f68;
+  --red:#c8102e;        /* czerwień z logo Ro-Ja-L */
+  --yellow:#ffc72c;     /* żółć punktu foto */
+  --safelight:#2a0d10;  /* czerwone światło ciemni */
+  --f-display:"Bricolage Grotesque", "Segoe UI", system-ui, sans-serif;
+  --f-body:"Inter", "Segoe UI", system-ui, sans-serif;
+  --f-mono:"IBM Plex Mono", ui-monospace, Consolas, monospace;
+  --r:14px;
+}
+*{box-sizing:border-box}
+[hidden]{display:none!important}
+html{scroll-behavior:smooth}
+body{margin:0;background:var(--paper);color:var(--ink);font:16px/1.6 var(--f-body)}
+img{max-width:100%}
+a{color:inherit}
+.wrap{max-width:1120px;margin:0 auto;padding-left:max(16px,env(safe-area-inset-left,0px));padding-right:max(16px,env(safe-area-inset-right,0px))}
+h1,h2,h3{font-family:var(--f-display);line-height:1.08;text-wrap:balance;margin:0}
+h2{font-size:clamp(28px,4.2vw,44px);font-weight:800;letter-spacing:-.01em}
+h3{font-size:20px;font-weight:700}
+.eyebrow{font:500 12px/1 var(--f-mono);letter-spacing:.12em;text-transform:uppercase;color:var(--red)}
+.todo{background:#fff3c4;color:var(--ink);border-bottom:2px dashed #c9a400;padding:0 .2em;font-weight:600;white-space:nowrap}
+.btn{display:inline-flex;align-items:center;gap:.5em;font:600 16px/1 var(--f-body);text-decoration:none;border-radius:999px;padding:14px 22px;border:2px solid transparent;cursor:pointer}
+.btn-y{background:var(--yellow);color:var(--ink)}
+.btn-y:hover{filter:brightness(.95)}
+.btn-o{border-color:currentColor;background:transparent}
+:focus-visible{outline:3px solid var(--yellow);outline-offset:3px}
+
+/* pasek projektu */
+.note{background:var(--yellow);color:var(--ink);font:500 13px/1.4 var(--f-body);text-align:center;padding-block:8px}
+
+/* nagłówek */
+header{background:var(--ink);color:#fff;position:sticky;top:0;z-index:20}
+.nav{display:flex;align-items:center;justify-content:space-between;gap:16px;padding-block:14px}
+.logo{display:flex;align-items:center;gap:12px;text-decoration:none}
+.logo .chip{background:#fff;border-radius:6px;padding:7px 12px;display:inline-flex}
+.logo .chip img{height:24px;width:auto;display:block}
+.logo b{font:800 24px/1 var(--f-display);color:#fff;letter-spacing:-.02em;white-space:nowrap}
+@media (max-width:420px){.logo small{display:none}}
+.logo b span{color:var(--red);background:#fff;padding:0 6px;border-radius:4px;margin-right:2px}
+.logo small{font:500 11px/1 var(--f-mono);letter-spacing:.1em;color:#c9cad1;text-transform:uppercase}
+.nav ul{display:flex;gap:22px;list-style:none;margin:0;padding:0;font-size:15px}
+.nav ul a{text-decoration:none;color:#e6e6ea}
+.nav ul a:hover{color:var(--yellow)}
+.tel{font:600 15px/1 var(--f-body);color:var(--yellow);text-decoration:none;white-space:nowrap}
+@media (max-width:860px){.nav ul{display:none}}
+
+/* hero */
+.hero{background:radial-gradient(120% 90% at 85% 10%, #4a1016 0%, var(--safelight) 45%, var(--ink) 100%);color:#fff;padding-block:56px 64px}
+.hero-grid{display:grid;grid-template-columns:1.2fr .8fr;gap:48px;align-items:center}
+.hero h1{font-size:clamp(36px,6vw,64px);font-weight:800;letter-spacing:-.02em}
+.hero h1 em{font-style:normal;color:var(--yellow)}
+.hero p.lead{font-size:18px;color:#e4e1e1;max-width:34em;margin:20px 0 28px}
+.cta{display:flex;flex-wrap:wrap;gap:12px}
+.facts{display:flex;flex-wrap:wrap;gap:10px 22px;margin-top:28px;font-size:14px;color:#d8d4d4}
+.facts span{display:inline-flex;gap:8px;align-items:center}
+.stars{color:var(--yellow);letter-spacing:2px}
+/* zdjęcie do dokumentu 35 × 45 mm */
+.idphoto{justify-self:center;position:relative;width:min(280px,70vw);aspect-ratio:35/45;max-width:100%;background:#eef0f2;border-radius:6px;box-shadow:0 30px 60px rgba(0,0,0,.45);overflow:visible}
+.idphoto svg{width:100%;height:100%;display:block;border-radius:6px}
+.dim{position:absolute;font:500 12px/1 var(--f-mono);color:#f3d9a0;white-space:nowrap}
+.dim.w{left:0;right:0;bottom:-26px;text-align:center}
+.dim.h{right:-46px;top:50%;transform:translateY(-50%) rotate(90deg)}
+@media (max-width:860px){.hero-grid{grid-template-columns:1fr}.idphoto{width:min(220px,60vw)}.dim.h{right:-40px}}
+
+/* sekcje */
+section{padding-block:72px}
+.sec-head{display:grid;gap:12px;margin-bottom:32px;max-width:720px}
+.sec-head p{color:var(--muted);margin:0;font-size:17px}
+
+/* dokumenty */
+.docs{display:grid;grid-template-columns:1.1fr .9fr;gap:40px;align-items:start}
+.doclist{display:flex;flex-wrap:wrap;gap:8px;margin:0;padding:0;list-style:none}
+.doclist li{background:var(--card);border:1px solid var(--line);border-radius:999px;padding:8px 14px;font-size:15px}
+.panel{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:24px}
+.price{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-block:12px;border-bottom:1px solid var(--line);font-variant-numeric:tabular-nums}
+.price:last-child{border-bottom:0}
+.price span:first-child{color:var(--muted)}
+.steps{counter-reset:s;display:grid;gap:14px;margin:20px 0 0;padding:0;list-style:none}
+.steps li{counter-increment:s;display:grid;grid-template-columns:34px 1fr;gap:12px;align-items:start}
+.steps li::before{content:counter(s);width:34px;height:34px;border-radius:50%;background:var(--ink);color:#fff;display:grid;place-items:center;font:700 15px/1 var(--f-display)}
+@media (max-width:860px){.docs{grid-template-columns:1fr}}
+
+/* renowacja */
+.reno{background:var(--ink);color:#fff}
+.reno .sec-head p{color:#c9cad1}
+.ba{display:grid;grid-template-columns:1fr 1fr;gap:14px;max-width:640px}
+.ba figure{margin:0}
+.ba .ph{aspect-ratio:4/5;border-radius:10px;max-width:100%}
+.ph.old{background:
+  radial-gradient(circle at 30% 20%,rgba(255,255,255,.35) 0 2px,transparent 3px),
+  linear-gradient(115deg,transparent 48%,rgba(255,255,255,.55) 49%,transparent 51%),
+  radial-gradient(ellipse at 50% 38%,#8a7a62 0 18%,transparent 19%),
+  radial-gradient(ellipse at 50% 85%,#6e604c 0 34%,transparent 35%),
+  linear-gradient(#b9a88a,#9c8b70);filter:sepia(.6) contrast(.8)}
+.ph.new{background:
+  radial-gradient(ellipse at 50% 38%,#d9b8a0 0 18%,transparent 19%),
+  radial-gradient(ellipse at 50% 85%,#3d5a80 0 34%,transparent 35%),
+  linear-gradient(#e9e4da,#cfc6b5)}
+.ba figcaption{font:500 12px/1.4 var(--f-mono);letter-spacing:.08em;text-transform:uppercase;color:#c9cad1;margin-top:8px}
+.reno-grid{display:grid;grid-template-columns:1fr 1fr;gap:48px;align-items:start}
+.reno ul.what{display:grid;gap:10px;margin:0 0 24px;padding:0;list-style:none}
+.reno ul.what li{padding-left:22px;position:relative}
+.reno ul.what li::before{content:"";position:absolute;left:0;top:.6em;width:10px;height:10px;border-radius:2px;background:var(--yellow)}
+.reno .steps li::before{background:var(--yellow);color:var(--ink)}
+.small{font-size:14px;color:#a9abb4}
+@media (max-width:860px){.reno-grid{grid-template-columns:1fr}}
+
+/* pozostałe usługi */
+.grid3{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:16px}
+.svc{background:var(--card);border:1px solid var(--line);border-radius:var(--r);padding:22px;display:grid;gap:10px;align-content:start}
+.svc p{margin:0;color:var(--muted)}
+.svc .tag{font:500 11px/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;color:var(--red)}
+@media (max-width:860px){.grid3{grid-template-columns:1fr}}
+
+/* sklep */
+.shop{display:grid;grid-template-columns:.9fr 1.1fr;gap:40px;align-items:center}
+.cal{aspect-ratio:3/4;max-width:340px;width:100%;justify-self:center;border-radius:6px;background:
+  linear-gradient(#0000 70%,rgba(0,0,0,.08)),
+  repeating-linear-gradient(90deg,#c9b58f 0 30px,#bba67e 30px 31px),
+  linear-gradient(#d8c7a2,#b39d72);box-shadow:0 18px 40px rgba(0,0,0,.18);position:relative;display:grid;place-items:end center;padding:18px}
+.cal::before{content:"";position:absolute;top:-8px;left:20%;right:20%;height:16px;background:repeating-linear-gradient(90deg,var(--ink) 0 6px,transparent 6px 14px);border-radius:4px}
+.cal span{background:rgba(255,255,255,.88);font:700 16px/1.2 var(--f-display);padding:10px 14px;border-radius:6px;text-align:center}
+.goods{display:flex;flex-wrap:wrap;gap:8px;margin:18px 0 0;padding:0;list-style:none}
+.goods li{border:1px dashed #b9b9b1;border-radius:8px;padding:6px 12px;font-size:14px}
+@media (max-width:860px){.shop{grid-template-columns:1fr}}
+
+/* zamówienie */
+form{display:grid;gap:14px}
+.row2{display:grid;grid-template-columns:1fr 1fr;gap:14px}
+label{display:grid;gap:6px;font-weight:500;font-size:15px}
+input,select,textarea{font:16px var(--f-body);padding:12px 14px;border:1px solid var(--line);border-radius:10px;background:#fff;color:var(--ink);width:100%}
+textarea{min-height:96px;resize:vertical}
+input[type=radio],input[type=checkbox]{width:auto;padding:0;margin:0;flex:none}
+.ok{background:#e8f6ec;border:1px solid #9ad0a8;border-radius:10px;padding:12px 14px}
+@media (max-width:600px){.row2{grid-template-columns:1fr}}
+
+/* FAQ */
+details{border-bottom:1px solid var(--line);padding-block:16px}
+summary{cursor:pointer;font:700 18px/1.3 var(--f-display);list-style:none;display:flex;justify-content:space-between;gap:16px}
+summary::after{content:"+";color:var(--red);font-size:24px;line-height:1}
+details[open] summary::after{content:"–"}
+details p{margin:10px 0 0;color:var(--muted);max-width:62ch}
+
+/* kontakt */
+.contact{background:var(--ink);color:#fff}
+.cgrid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:28px}
+.cgrid h3{color:var(--yellow);margin-bottom:8px}
+.cgrid p{margin:0;color:#dcdce2}
+footer{background:#0d0e12;color:#8d8f99;font-size:13px;padding-block:22px}
+@media (max-width:860px){.cgrid{grid-template-columns:1fr}}
+/* narzędzia: wspólne */
+fieldset{border:0;margin:0;padding:0;display:grid;gap:8px;min-width:0}
+legend{font-weight:600;font-size:15px;margin-bottom:6px;padding:0}
+.opcje label{display:grid;grid-template-columns:auto minmax(0,1fr) auto;gap:4px 10px;align-items:center;font-weight:400;font-size:15px;line-height:1.35;border:1px solid var(--line);border-radius:10px;padding:10px 12px;cursor:pointer}
+.opcje label b{font-variant-numeric:tabular-nums;white-space:nowrap}
+.opcje label small{grid-column:2/-1;color:var(--muted)}
+.opcje input{accent-color:var(--red)}
+.suma{display:flex;justify-content:space-between;align-items:baseline;gap:12px;padding-block:14px;border-top:2px solid var(--ink);margin-top:6px;font-weight:600}
+.suma b{font:800 28px/1 var(--f-display);font-variant-numeric:tabular-nums}
+.row-btn{display:flex;gap:10px;flex-wrap:wrap}
+.sr{position:absolute;width:1px;height:1px;overflow:hidden;clip:rect(0 0 0 0)}
+/* dokument online */
+.dok{display:grid;gap:16px;margin-top:14px}
+.tabs{display:flex;gap:6px;flex-wrap:wrap}
+.tab{font:500 13px/1 var(--f-mono);padding:8px 10px;border-radius:999px;border:1px solid var(--line);color:var(--muted)}
+.tab.on{background:var(--ink);color:#fff;border-color:var(--ink)}
+.krok{display:grid;gap:14px}
+.tips{margin:0;padding-left:18px;color:var(--muted);font-size:15px;display:grid;gap:4px}
+.dok-prev{display:grid;grid-template-columns:150px minmax(0,1fr);gap:16px;align-items:start}
+.dok-ramka{position:relative;aspect-ratio:35/45;max-width:100%;background:#eef0f2;border-radius:6px;overflow:hidden}
+.dok-ramka img,.dok-ramka svg{position:absolute;inset:0;width:100%;height:100%;object-fit:cover}
+.checks{margin:0;padding:0;list-style:none;display:grid;gap:6px;font-size:14px}
+.checks .t{color:#1d7a3a}.checks .n{color:var(--red)}
+.gwarancja{margin:0;font-size:15px;color:var(--muted)}
+@media (max-width:480px){.dok-prev{grid-template-columns:110px minmax(0,1fr)}}
+/* renowacja: suwak i wycena */
+.suwak{position:relative;aspect-ratio:4/5;max-width:420px;width:100%;border-radius:10px;overflow:hidden}
+.suwak .ph{position:absolute;inset:0;aspect-ratio:auto;border-radius:0}
+.suwak #suwak-old{clip-path:inset(0 50% 0 0)}
+.suwak::after{content:"";position:absolute;top:0;bottom:0;left:var(--x,50%);width:3px;background:var(--yellow);transform:translateX(-50%);pointer-events:none}
+.suwak input{position:absolute;inset:0;width:100%;height:100%;opacity:0;cursor:ew-resize;margin:0}
+.sw-l,.sw-r{position:absolute;top:10px;font:500 11px/1 var(--f-mono);letter-spacing:.1em;text-transform:uppercase;background:rgba(0,0,0,.55);color:#fff;padding:6px 8px;border-radius:4px;pointer-events:none}
+.sw-l{left:10px}.sw-r{right:10px}
+.obietnica{border-left:3px solid var(--yellow);padding-left:12px;margin:22px 0 0;color:#e9e9ee}
+.wycena{background:var(--card);color:var(--ink);border-radius:var(--r);padding:22px;margin-top:24px;display:grid;gap:14px;max-width:520px}
+.wycena .small{color:var(--muted);margin:0}
+.wycena .btn{justify-self:start}
+/* kalkulator odbitek */
+.kalk{display:grid;grid-template-columns:1.2fr .8fr;gap:20px;align-items:start}
+.kalk-l,.kalk-r{display:grid;gap:16px;min-width:0}
+.kadry{grid-template-columns:repeat(3,minmax(0,1fr))}
+.kadry label{display:grid;gap:6px;justify-items:center;text-align:center;font-weight:400;font-size:13px;border:1px solid var(--line);border-radius:10px;padding:10px 6px;cursor:pointer}
+.kadry label:has(input:checked){border-color:var(--red);box-shadow:0 0 0 1px var(--red)}
+.kadry label{position:relative}
+.kadry input{position:absolute;opacity:0;inset:0;width:100%;height:100%;margin:0;cursor:pointer}
+.mini{width:54px;height:38px;border-radius:3px;background:#3d5a80;position:relative;display:block}
+.mini.m1{background:linear-gradient(135deg,#3d5a80,#98c1d9)}
+.mini.m2{background:#fff;border:1px solid var(--line)}
+.mini.m2::after{content:"";position:absolute;inset:5px;background:linear-gradient(135deg,#3d5a80,#98c1d9)}
+.mini.m3{background:#fff;border:1px solid var(--line)}
+.mini.m3::after{content:"";position:absolute;inset:7px 3px;background:linear-gradient(135deg,#3d5a80,#98c1d9)}
+.miniatury{display:grid;grid-template-columns:repeat(auto-fill,minmax(74px,1fr));gap:8px}
+.miniatury figure{margin:0;position:relative}
+.miniatury img{width:100%;aspect-ratio:1;object-fit:cover;border-radius:6px;display:block}
+.miniatury figcaption{font-size:11px;line-height:1.3;margin-top:3px}
+.miniatury .slabe img{outline:3px solid var(--red)}
+.miniatury .slabe figcaption{color:var(--red)}
+.progi{width:100%;border-collapse:collapse;font-size:13px;font-variant-numeric:tabular-nums}
+.progi th,.progi td{border-bottom:1px solid var(--line);padding:6px 4px;text-align:right}
+.progi th:first-child,.progi td:first-child{text-align:left}
+.progi tr.on td{background:#fff3c4;font-weight:600}
+#k-prog{color:var(--red);margin:0}
+@media (max-width:860px){.kalk{grid-template-columns:1fr}}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<div class="note"><div class="wrap">Projekt strony do pokazania. Miejsca na <span class="todo">żółtym tle</span> uzupełnimy po rozmowie (ceny, godziny, zdjęcia prac).</div></div>
+
+<header>
+  <div class="wrap nav">
+    <a class="logo" href="#top"><span class="chip"><img src="logo-rojal.svg" alt="Ro-Ja-L"></span><small>Kodak Express · Leszno</small></a>
+    <ul>
+      <li><a href="#dokumenty">Zdjęcia do dokumentów</a></li>
+      <li><a href="#renowacja">Renowacja</a></li>
+      <li><a href="#odbitki">Odbitki online</a></li>
+      <li><a href="#sklep">Sklep</a></li>
+      <li><a href="#kontakt">Kontakt</a></li>
+    </ul>
+    <a class="tel" href="tel:+48792030492">792 030 492</a>
+  </div>
+</header>
+
+<main id="top">
+<section class="hero">
+  <div class="wrap hero-grid">
+    <div>
+      <p class="eyebrow" style="color:var(--yellow)">Zakład fotograficzny w Lesznie</p>
+      <h1>Zdjęcia do dokumentów <em>od ręki</em>. Stare zdjęcia odnowimy dla całej Polski.</h1>
+      <p class="lead">Dowód, paszport, prawo jazdy, wiza i każdy inny dokument: na papierze albo w pliku do wniosku online. Do tego odbitki, renowacja rodzinnych zdjęć i przegrywanie kaset wideo.</p>
+      <div class="cta">
+        <a class="btn btn-y" href="#dokumenty">Zdjęcie do dokumentu</a>
+        <a class="btn btn-o" href="#zamow">Wyślij zdjęcie do odnowienia</a>
+      </div>
+      <div class="facts">
+        <span>ul. Bohaterów Westerplatte 15, Leszno</span>
+        <span>pn–pt 9–18, sob 9–13 <span class="todo">do potwierdzenia</span></span>
+        <span><span class="stars">★★★★★</span> 4,7 · 63 opinie w Google</span>
+      </div>
+    </div>
+    <div class="idphoto" role="img" aria-label="Wzór zdjęcia do dowodu o wymiarach 35 na 45 milimetrów">
+      <svg viewBox="0 0 350 450" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+        <rect width="350" height="450" fill="#eef0f2"/>
+        <ellipse cx="175" cy="190" rx="78" ry="100" fill="#d7b49b"/>
+        <path d="M95 175 Q100 80 175 78 Q250 80 255 175 Q240 120 175 115 Q110 120 95 175Z" fill="#3b2a22"/>
+        <path d="M40 450 Q60 330 175 318 Q290 330 310 450Z" fill="#2e3b55"/>
+        <ellipse cx="175" cy="190" rx="92" ry="118" fill="none" stroke="#c8102e" stroke-width="2" stroke-dasharray="7 6"/>
+        <line x1="20" y1="72" x2="330" y2="72" stroke="#c8102e" stroke-width="1.5" stroke-dasharray="4 5"/>
+        <line x1="20" y1="308" x2="330" y2="308" stroke="#c8102e" stroke-width="1.5" stroke-dasharray="4 5"/>
+      </svg>
+      <span class="dim w">35 mm</span>
+      <span class="dim h">45 mm</span>
+    </div>
+  </div>
+</section>
+
+<section id="dokumenty">
+  <div class="wrap docs">
+    <div>
+      <div class="sec-head">
+        <p class="eyebrow">Zdjęcia do dokumentów</p>
+        <h2>Zdjęcie, które urząd przyjmie za pierwszym razem</h2>
+        <p>Robimy zdjęcia zgodne z aktualnymi wymogami. Dostajesz odbitki od razu, a na życzenie także plik do wniosku przez internet (np. w mObywatelu).</p>
+      </div>
+      <ul class="doclist">
+        <li>dowód osobisty</li><li>paszport</li><li>prawo jazdy</li><li>karta kierowcy</li><li>legitymacja szkolna i studencka</li><li>mLegitymacja</li><li>wiza</li><li>karta pobytu</li><li>karta rezydenta</li><li>karta parkingowa</li><li>zdjęcia dzieci i niemowląt</li>
+      </ul>
+      <h3 style="margin-top:36px">Nie możesz przyjść? Zrób zdjęcie telefonem</h3>
+      <div class="panel dok" id="dok-online">
+        <div class="tabs" role="tablist" aria-label="Kroki zamówienia zdjęcia do dokumentu">
+          <span class="tab on" data-k="1">1. Dokument</span><span class="tab" data-k="2">2. Zdjęcie</span><span class="tab" data-k="3">3. Odbiór</span>
+        </div>
+        <div class="krok" data-k="1">
+          <label for="d-typ">Do jakiego dokumentu?
+            <select id="d-typ">
+              <option value="492x633">Dowód osobisty</option>
+              <option value="492x633">Paszport (dorosły)</option>
+              <option value="768x1004">Paszport dziecka do 12 lat</option>
+              <option value="492x633">Prawo jazdy / karta kierowcy</option>
+              <option value="492x633">Legitymacja / mLegitymacja</option>
+              <option value="600x600">Wiza (format zależny od kraju)</option>
+              <option value="492x633">Karta pobytu</option>
+            </select>
+          </label>
+          <ul class="tips"><li>białe lub jasne, gładkie tło</li><li>telefon 40–50 cm od twarzy, na wysokości oczu</li><li>światło dzienne z przodu, bez cieni</li><li>bez okularów przeciwsłonecznych i nakrycia głowy</li></ul>
+          <button class="btn btn-y" type="button" data-next="2">Dalej</button>
+        </div>
+        <div class="krok" data-k="2" hidden>
+          <label for="d-plik">Wgraj zdjęcie z telefonu<input id="d-plik" type="file" accept="image/*" capture="user"></label>
+          <div class="dok-prev">
+            <div class="dok-ramka"><img id="d-img" alt="Twoje zdjęcie" hidden><svg viewBox="0 0 350 450" aria-hidden="true"><ellipse cx="175" cy="200" rx="105" ry="135" fill="none" stroke="#c8102e" stroke-width="3" stroke-dasharray="8 7"/></svg></div>
+            <ul class="checks" id="d-checks"><li>Wgraj zdjęcie, a sprawdzimy rozdzielczość i kadr.</li></ul>
+          </div>
+          <div class="row-btn"><button class="btn btn-o" type="button" data-next="1">Wstecz</button><button class="btn btn-y" type="button" data-next="3">Dalej</button></div>
+        </div>
+        <div class="krok" data-k="3" hidden>
+          <fieldset class="opcje"><legend>Co chcesz dostać?</legend>
+            <label><input type="radio" name="d-pak" value="25" checked> Plik do wniosku online (e-mail) <b>25 zł</b></label>
+            <label><input type="radio" name="d-pak" value="39"> Plik + 4 odbitki z wysyłką <b>39 zł</b></label>
+            <label><input type="radio" name="d-pak" value="49"> Plik + 8 odbitek z wysyłką <b>49 zł</b></label>
+          </fieldset>
+          <p class="gwarancja"><b>Płacisz dopiero, gdy fotograf zaakceptuje zdjęcie.</b> Jeśli urząd go nie przyjmie, oddajemy pieniądze albo robimy nowe zdjęcie w zakładzie za darmo. <span class="todo">ceny i gwarancja przykładowe</span></p>
+          <div class="row-btn"><button class="btn btn-o" type="button" data-next="2">Wstecz</button><button class="btn btn-y" type="button" id="d-wyslij">Wyślij do sprawdzenia</button></div>
+          <div class="ok" id="d-ok" hidden>To podgląd strony: po uruchomieniu zdjęcie trafi do fotografa, a link do płatności przyjdzie po akceptacji.</div>
+        </div>
+      </div>
+    </div>
+    <div class="panel" aria-label="Cennik zdjęć do dokumentów">
+      <h3>Cennik</h3>
+      <div class="price"><span>Zdjęcia do dokumentu, komplet odbitek</span><span class="todo">… zł</span></div>
+      <div class="price"><span>Plik cyfrowy do wniosku online</span><span class="todo">… zł</span></div>
+      <div class="price"><span>Zdjęcie z telefonu + odbitki z wysyłką</span><span class="todo">… zł</span></div>
+      <div class="price"><span>Czas wykonania na miejscu</span><span>ok. 5–10 min <span class="todo">?</span></span></div>
+      <p class="small" style="color:var(--muted);margin:14px 0 0">Jeśli urząd nie przyjmie zdjęcia, poprawimy je bezpłatnie. <span class="todo">do decyzji</span></p>
+    </div>
+  </div>
+</section>
+
+<section id="renowacja" class="reno">
+  <div class="wrap reno-grid">
+    <div>
+      <div class="sec-head">
+        <p class="eyebrow" style="color:var(--yellow)">Renowacja i retusz · wysyłka w całej Polsce</p>
+        <h2>Odnowimy zdjęcia dziadków, ślubne i z albumu rodzinnego</h2>
+        <p>Naprawiamy zagięcia, rysy, plamy i wyblakłe kolory. Każde zdjęcie przegląda fotograf: nowoczesne narzędzia AI robią wstępną pracę, a człowiek pilnuje, żeby twarz została twarzą tej osoby.</p>
+      </div>
+      <ul class="what">
+        <li>usuwanie rys, pęknięć, plam i zagnieceń</li>
+        <li>przywracanie kolorów i ostrości</li>
+        <li>koloryzacja zdjęć czarno-białych (zawsze opisana jako rekonstrukcja)</li>
+        <li>wydruk w wybranym formacie, także w ramce na prezent</li>
+      </ul>
+      <ol class="steps">
+        <li><span>Wyślij skan albo dobre zdjęcie telefonem. Oryginał możesz też przynieść lub wysłać pocztą, odeślemy go ubezpieczoną przesyłką.</span></li>
+        <li><span>W ciągu 24 godzin dostajesz bezpłatną wycenę i podgląd ze znakiem wodnym. Dołącz drugie zdjęcie tej osoby, jeśli masz: pomoże zachować rysy.</span></li>
+        <li><span>Płacisz po akceptacji podglądu. Dostajesz plik w wysokiej jakości i wydruk, także w ramce.</span></li>
+      </ol>
+      <p class="obietnica">Nie zmieniamy rysów twarzy. Każdą twarz zatwierdza retuszer, a poprawki są w cenie.</p>
+    </div>
+    <div>
+      <div class="suwak" id="suwak" aria-label="Porównanie zdjęcia przed i po renowacji">
+        <div class="ph new"></div>
+        <div class="ph old" id="suwak-old"></div>
+        <span class="sw-l">Przed</span><span class="sw-r">Po</span>
+        <input type="range" id="suwak-in" min="0" max="100" value="50" aria-label="Przesuń, aby porównać">
+      </div>
+      <p class="small" style="margin-top:10px">Przesuń suwak. Tu wstawimy prawdziwe prace Rojala (za zgodą klientów). <span class="todo">zdjęcia przed/po</span></p>
+      <div class="wycena" id="wycena">
+        <h3>Orientacyjna wycena</h3>
+        <fieldset class="opcje"><legend>Stan zdjęcia</legend>
+          <label><input type="radio" name="r-stan" value="39" checked> Lekko zniszczone: wyblakłe, drobne rysy <b>39 zł</b></label>
+          <label><input type="radio" name="r-stan" value="69"> Średnio: pęknięcia, plamy, zagięcia <b>69 zł</b></label>
+          <label><input type="radio" name="r-stan" value="119"> Mocno: brakujące fragmenty, rozdarcia <b>119 zł</b></label>
+        </fieldset>
+        <label for="r-osoby">Liczba osób na zdjęciu<input id="r-osoby" type="number" min="1" max="30" value="1" inputmode="numeric"></label>
+        <fieldset class="opcje"><legend>Dodatki</legend>
+          <label><input type="checkbox" data-c="40"> Koloryzacja (rekonstrukcja kolorów) <b>+40 zł</b></label>
+          <label><input type="checkbox" data-c="15"> Odbitka 13×18 <b>+15 zł</b></label>
+          <label><input type="checkbox" data-c="45"> Odbitka 20×30 w ramce na prezent <b>+45 zł</b></label>
+          <label><input type="checkbox" data-c="20"> Krótka animacja zdjęcia (oznaczona jako AI) <b>+20 zł</b></label>
+          <label><input type="checkbox" data-c="25"> Oryginał pocztą w obie strony, ubezpieczony <b>+25 zł</b></label>
+          <label><input type="checkbox" data-c="30"> Ekspres 24 h <b>+30 zł</b></label>
+        </fieldset>
+        <div class="suma"><span>Razem orientacyjnie</span><b id="r-suma">39 zł</b></div>
+        <p class="small">Ostateczną cenę podajemy po obejrzeniu zdjęcia, przed rozpoczęciem pracy. <span class="todo">ceny przykładowe</span></p>
+        <a class="btn btn-y" href="#zamow">Wyślij zdjęcie do wyceny</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="odbitki">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Odbitki przez internet</p>
+      <h2>Policz odbitki: cena od razu z dostawą</h2>
+      <p>Wgraj zdjęcia z telefonu lub komputera, wybierz format i odbiór. Przy każdym zdjęciu sprawdzimy, czy wystarczy mu jakości, a przed drukiem całe zamówienie obejrzy fotograf.</p>
+    </div>
+    <div class="kalk">
+      <div class="panel kalk-l">
+        <div class="row2">
+          <label for="k-format">Format
+            <select id="k-format">
+              <option value="9x13">9 × 13 cm</option>
+              <option value="10x15" selected>10 × 15 cm</option>
+              <option value="13x18">13 × 18 cm</option>
+              <option value="15x21">15 × 21 cm</option>
+              <option value="20x30">20 × 30 cm</option>
+            </select>
+          </label>
+          <label for="k-papier">Papier
+            <select id="k-papier"><option value="0">Błyszczący</option><option value="0.05">Matowy (+0,05 zł/szt.)</option></select>
+          </label>
+        </div>
+        <fieldset class="kadry"><legend>Kadr</legend>
+          <label><input type="radio" name="k-kadr" value="przyciete" checked><span class="mini m1"></span>Przycięte do formatu</label>
+          <label><input type="radio" name="k-kadr" value="ramka"><span class="mini m2"></span>Z białą ramką</label>
+          <label><input type="radio" name="k-kadr" value="pelny"><span class="mini m3"></span>Całe zdjęcie</label>
+        </fieldset>
+        <label for="k-pliki">Zdjęcia<input id="k-pliki" type="file" accept="image/*" multiple></label>
+        <div class="miniatury" id="k-min"></div>
+        <label for="k-szt">Odbitek z każdego zdjęcia<input id="k-szt" type="number" min="1" max="50" value="1" inputmode="numeric"></label>
+        <p class="small" id="k-licznik">Nie wgrano jeszcze zdjęć. Możesz też wpisać liczbę odbitek ręcznie:</p>
+        <label for="k-reczna" class="sr">Liczba odbitek<input id="k-reczna" type="number" min="0" max="2000" value="36" inputmode="numeric"></label>
+      </div>
+      <div class="panel kalk-r">
+        <h3>Podsumowanie</h3>
+        <fieldset class="opcje"><legend>Odbiór</legend>
+          <label><input type="radio" name="k-dost" value="0" checked> Odbiór w Lesznie <b>0 zł</b><small id="k-termin0"></small></label>
+          <label><input type="radio" name="k-dost" value="14.9"> Paczkomat InPost <b>14,90 zł</b><small id="k-termin1"></small></label>
+        </fieldset>
+        <div class="price"><span id="k-opis">36 × 10×15</span><span id="k-cena-szt"></span></div>
+        <div class="price"><span>Odbitki</span><span id="k-odbitki"></span></div>
+        <div class="price"><span>Dostawa</span><span id="k-dostawa"></span></div>
+        <div class="suma"><span>Razem do zapłaty</span><b id="k-suma"></b></div>
+        <p class="small" id="k-prog"></p>
+        <table class="progi" aria-label="Ceny za sztukę według liczby odbitek"><thead><tr><th>Liczba</th><th>1–49</th><th>50–149</th><th>150+</th></tr></thead><tbody id="k-progi"></tbody></table>
+        <p class="small">Ceny przykładowe do ustalenia z zakładem. <span class="todo">cennik</span></p>
+        <button class="btn btn-y" type="button" id="k-zamow">Zamów odbitki</button>
+        <div class="ok" id="k-ok" hidden>To podgląd strony: po uruchomieniu zamówienie trafi do zakładu, a fotograf sprawdzi zdjęcia przed drukiem.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section id="uslugi">
+  <div class="wrap">
+    <div class="sec-head">
+      <p class="eyebrow">Pozostałe usługi</p>
+      <h2>Odbitki, filmy, kasety i pamiątki</h2>
+    </div>
+    <div class="grid3">
+      <div class="svc"><span class="tag">Odbitki na miejscu</span><h3>Zdjęcia z telefonu i pendrive’a</h3><p>Przynieś telefon albo pendrive, wydrukujemy od ręki. Przez internet zamówisz w <a href="#odbitki">kalkulatorze odbitek</a>.</p></div>
+      <div class="svc"><span class="tag">Fotografia analogowa</span><h3>Filmy do aparatów</h3><p>Filmy małoobrazkowe Kodak i Fujifilm na miejscu. Wywołanie filmu i skan <span class="todo">do potwierdzenia</span>.</p></div>
+      <div class="svc"><span class="tag">Digitalizacja</span><h3>Kasety wideo na pendrive</h3><p>Przegrywamy rodzinne nagrania z kaset VHS. Wynik na pendrive albo do pobrania z internetu. Kasety możesz przysłać z całej Polski.</p></div>
+    </div>
+  </div>
+</section>
+
+<section id="sklep" style="padding-top:0">
+  <div class="wrap shop">
+    <div class="cal" role="img" aria-label="Kalendarz Leszno na starych pocztówkach"><span>Leszno na starych pocztówkach<br>Kalendarz 2027</span></div>
+    <div>
+      <div class="sec-head">
+        <p class="eyebrow">Sklep fotograficzny</p>
+        <h2>Kalendarz Leszna, ramki i drobiazgi na prezent</h2>
+        <p>Co roku wydajemy kalendarz „Leszno na starych pocztówkach” (A3, 12 stron). Kupisz go w sklepie albo zamówisz z wysyłką, także jako prezent dla rodziny spoza Leszna. <span class="todo">cena … zł</span></p>
+      </div>
+      <ul class="goods">
+        <li>ramki do zdjęć</li><li>albumy</li><li>filmy Kodak i Fujifilm</li><li>lornetki, także dziecięce</li><li>baterie do aparatów słuchowych</li><li>portfele skórzane</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="zamow" style="background:#ececE7">
+  <div class="wrap docs">
+    <div class="sec-head">
+      <p class="eyebrow">Zamówienie przez internet</p>
+      <h2>Wyślij zdjęcie, a my odpowiemy z ceną</h2>
+      <p>Renowacja, zdjęcie do dokumentu z telefonu, odbitki albo pytanie. Odpowiadamy w godzinach otwarcia <span class="todo">w ciągu … h</span>. Wolisz telefon? Zadzwoń: <b>792 030 492</b> (też WhatsApp).</p>
+    </div>
+    <form id="formularz" class="panel" novalidate>
+      <div class="row2">
+        <label for="f-imie">Imię<input id="f-imie" name="imie" autocomplete="given-name" required></label>
+        <label for="f-tel">Telefon lub e-mail<input id="f-tel" name="kontakt" required></label>
+      </div>
+      <label for="f-usluga">Usługa
+        <select id="f-usluga" name="usluga">
+          <option>Renowacja starego zdjęcia</option>
+          <option>Zdjęcie do dokumentu z telefonu</option>
+          <option>Odbitki</option>
+          <option>Przegranie kaset wideo</option>
+          <option>Inne pytanie</option>
+        </select>
+      </label>
+      <label for="f-plik">Zdjęcie (jedno lub kilka)<input id="f-plik" name="plik" type="file" accept="image/*" multiple></label>
+      <label for="f-uwagi">Co mamy zrobić?<textarea id="f-uwagi" name="uwagi" placeholder="Np. zdjęcie babci z 1965 r., pęknięte na rogu, 2 odbitki 13×18 z wysyłką do Gdańska"></textarea></label>
+      <button class="btn btn-y" type="submit" style="justify-self:start;border:0">Wyślij do wyceny</button>
+      <div id="f-ok" class="ok" hidden>To podgląd strony: formularz zacznie wysyłać zgłoszenia po jej uruchomieniu.</div>
+    </form>
+  </div>
+</section>
+
+<section id="pytania">
+  <div class="wrap" style="max-width:860px">
+    <div class="sec-head">
+      <p class="eyebrow">Najczęstsze pytania</p>
+      <h2>Pytania, które dostajemy przy ladzie</h2>
+    </div>
+    <details><summary>Ile kosztuje zdjęcie do dowodu w Lesznie?</summary><p>Komplet zdjęć do dowodu kosztuje u nas <span class="todo">… zł</span>, plik do wniosku online <span class="todo">… zł</span>. Zdjęcie robimy od ręki, bez zapisów.</p></details>
+    <details><summary>Czy zdjęcie nada się do wniosku przez mObywatel?</summary><p>Tak. Przygotujemy plik zgodny z wymogami wniosku elektronicznego i wyślemy go na e-mail.</p></details>
+    <details><summary>Czy robicie zdjęcia do dokumentów dla niemowląt i dzieci?</summary><p>Tak. Najlepiej przyjść, gdy dziecko jest wyspane i najedzone. Zdjęcie zrobimy tak, żeby spełniało wymogi urzędu.</p></details>
+    <details><summary>Jak wysłać stare zdjęcie do renowacji?</summary><p>Najprościej: skan albo dobre zdjęcie telefonem przez formularz. Jeśli wolisz oddać oryginał, przynieś go albo wyślij pocztą, a odeślemy go razem z gotową odbitką.</p></details>
+    <details><summary>Ile trwa renowacja i ile kosztuje?</summary><p>Zwykle <span class="todo">… dni</span>. Cenę podajemy przed rozpoczęciem pracy, zależy od stanu zdjęcia. Prosta naprawa od <span class="todo">… zł</span>.</p></details>
+    <details><summary>Czy wysyłacie zamówienia poza Leszno?</summary><p>Tak, w całej Polsce: listem albo do paczkomatu. Koszt wysyłki <span class="todo">… zł</span>.</p></details>
+  </div>
+</section>
+</main>
+
+<section id="kontakt" class="contact">
+  <div class="wrap cgrid">
+    <div><h3>Adres</h3><p>Rojal · Kodak Express<br>ul. Bohaterów Westerplatte 15<br>64-100 Leszno</p><p style="margin-top:10px"><a href="https://www.google.com/maps/search/?api=1&query=Bohater%C3%B3w+Westerplatte+15+Leszno" style="color:var(--yellow)">Pokaż na mapie</a></p></div>
+    <div><h3>Godziny</h3><p>poniedziałek–piątek 9:00–18:00<br>sobota 9:00–13:00<br><span class="todo">do potwierdzenia</span></p></div>
+    <div><h3>Kontakt</h3><p>tel. i WhatsApp: <b>792 030 492</b><br>e-mail: rojal@onet.pl<br><a href="https://www.facebook.com/rojal.leszno" style="color:var(--yellow)">Facebook</a></p></div>
+  </div>
+</section>
+<footer><div class="wrap">© Ro-Ja-L s.c. · sklep i zakład fotograficzny w Lesznie</div></footer>
+
+<script>
+(function(){
+const $ = id => document.getElementById(id);
+const zl = v => v.toFixed(2).replace('.', ',') + ' zł';
+
+/* formularz ogólny */
+$('formularz').addEventListener('submit', e => { e.preventDefault(); $('f-ok').hidden = false; });
+
+/* --- Kalkulator odbitek (ceny przykładowe) --- */
+const CENY = { '9x13':[0.75,0.62,0.52], '10x15':[0.79,0.65,0.55], '13x18':[1.49,1.29,1.19], '15x21':[2.49,2.19,1.99], '20x30':[6.90,5.90,4.90] };
+// minimalne piksele dla 300 dpi (krótszy x dłuższy bok)
+const PX = { '9x13':[1063,1535], '10x15':[1181,1772], '13x18':[1535,2126], '15x21':[1772,2480], '20x30':[2362,3543] };
+const DARMOWA_OD = 99;
+let pliki = []; // {name, w, h, url}
+function liczbaOdbitek(){
+  const szt = Math.max(1, parseInt($('k-szt').value) || 1);
+  return pliki.length ? pliki.length * szt : Math.max(0, parseInt($('k-reczna').value) || 0);
+}
+function prog(n){ return n >= 150 ? 2 : n >= 50 ? 1 : 0; }
+function termin(){
+  const t = new Date(), d = t.getDay(), h = t.getHours();
+  const dni = ['nd','pn','wt','śr','czw','pt','sob'];
+  const otwarte = (d >= 1 && d <= 5 && h < 15) || (d === 6 && h < 11);
+  const odbior = otwarte ? 'dziś po ' + (d === 6 ? '12:00' : '16:00') : 'w następny dzień roboczy';
+  const j = new Date(t); j.setDate(t.getDate() + (otwarte ? 1 : 2)); if (j.getDay() === 0) j.setDate(j.getDate() + 1);
+  $('k-termin0').textContent = 'gotowe ' + odbior;
+  $('k-termin1').textContent = 'w paczkomacie ok. ' + dni[j.getDay()] + ' ' + j.getDate() + '.' + (j.getMonth() + 1);
+}
+function przelicz(){
+  const f = $('k-format').value, pap = parseFloat($('k-papier').value);
+  const n = liczbaOdbitek(), p = prog(n), cena = CENY[f][p] + pap;
+  const odb = n * cena;
+  const dostSel = parseFloat(document.querySelector('input[name="k-dost"]:checked').value);
+  const dost = dostSel > 0 && odb >= DARMOWA_OD ? 0 : dostSel;
+  $('k-opis').textContent = n + ' × ' + f.replace('x', '×');
+  $('k-cena-szt').textContent = zl(cena) + '/szt.';
+  $('k-odbitki').textContent = zl(odb);
+  $('k-dostawa').textContent = dostSel > 0 ? (dost === 0 ? '0,00 zł (darmowa)' : zl(dost)) : '0,00 zł';
+  $('k-suma').textContent = zl(odb + dost);
+  $('k-prog').textContent = dostSel > 0 && odb < DARMOWA_OD ? 'Do darmowej wysyłki brakuje ' + zl(DARMOWA_OD - odb) + '.' : (n >= 1 && n < 50 ? 'Od 50 odbitek cena za sztukę spada do ' + zl(CENY[f][1] + pap) + '.' : '');
+  $('k-progi').innerHTML = '<tr class="on"><td>' + f.replace('x', '×') + '</td>' + CENY[f].map((c, i) => '<td' + (i === p ? ' style="font-weight:700"' : '') + '>' + zl(c + pap) + '</td>').join('') + '</tr>';
+  // jakość
+  const [a, b] = PX[f];
+  let slabe = 0;
+  document.querySelectorAll('#k-min figure').forEach((fig, i) => {
+    const pl = pliki[i], kr = Math.min(pl.w, pl.h), dl = Math.max(pl.w, pl.h);
+    const ok = kr >= a * 0.7 && dl >= b * 0.7;
+    fig.classList.toggle('slabe', !ok);
+    fig.querySelector('figcaption').textContent = ok ? 'OK' : 'za mała jakość';
+    if (!ok) slabe++;
+  });
+  $('k-licznik').textContent = pliki.length ? 'Dodane zdjęcia: ' + pliki.length + (slabe ? '. Uwaga: ' + slabe + ' za słabej jakości na ten format (mogą wyjść nieostre). Fotograf da znać przed drukiem.' : '. Jakość wystarczy na wybrany format.') : 'Nie wgrano jeszcze zdjęć. Możesz też wpisać liczbę odbitek ręcznie:';
+  $('k-reczna').closest('label').classList.toggle('sr', pliki.length > 0);
+}
+$('k-pliki').addEventListener('change', e => {
+  pliki.forEach(p => URL.revokeObjectURL(p.url)); pliki = [];
+  const box = $('k-min'); box.innerHTML = '';
+  const fs = [...e.target.files].slice(0, 200);
+  let gotowe = 0;
+  fs.forEach((file, i) => {
+    const url = URL.createObjectURL(file), img = new Image();
+    const fig = document.createElement('figure');
+    fig.innerHTML = '<img alt=""><figcaption>…</figcaption>';
+    box.appendChild(fig);
+    pliki[i] = { name: file.name, w: 0, h: 0, url };
+    img.onload = () => { pliki[i].w = img.naturalWidth; pliki[i].h = img.naturalHeight; fig.querySelector('img').src = url; if (++gotowe === fs.length) przelicz(); };
+    img.onerror = () => { if (++gotowe === fs.length) przelicz(); };
+    img.src = url;
+  });
+  przelicz();
+});
+['k-format','k-papier','k-szt','k-reczna'].forEach(id => $(id).addEventListener('input', przelicz));
+document.querySelectorAll('input[name="k-dost"]').forEach(r => r.addEventListener('change', przelicz));
+$('k-zamow').addEventListener('click', () => { $('k-ok').hidden = false; });
+termin(); przelicz();
+
+/* --- Zdjęcie do dokumentu online --- */
+function krok(k){
+  document.querySelectorAll('#dok-online .krok').forEach(el => el.hidden = el.dataset.k !== String(k));
+  document.querySelectorAll('#dok-online .tab').forEach(el => el.classList.toggle('on', el.dataset.k === String(k)));
+}
+document.querySelectorAll('#dok-online [data-next]').forEach(b => b.addEventListener('click', () => krok(b.dataset.next)));
+$('d-plik').addEventListener('change', e => {
+  const file = e.target.files[0]; if (!file) return;
+  const url = URL.createObjectURL(file), img = new Image();
+  img.onload = () => {
+    const [mw, mh] = $('d-typ').value.split('x').map(Number);
+    const w = img.naturalWidth, h = img.naturalHeight;
+    const pion = h > w;
+    const ok1 = w >= mw && h >= mh;
+    const li = (ok, t) => '<li class="' + (ok ? 't' : 'n') + '">' + (ok ? '✓ ' : '✗ ') + t + '</li>';
+    $('d-checks').innerHTML =
+      li(ok1, 'Rozdzielczość ' + w + '×' + h + ' px' + (ok1 ? '' : ' (potrzeba co najmniej ' + mw + '×' + mh + ')')) +
+      li(pion, pion ? 'Zdjęcie pionowe' : 'Zdjęcie poziome: obróć telefon pionowo') +
+      li(file.size <= 15e6, 'Rozmiar pliku ' + (file.size / 1e6).toFixed(1) + ' MB') +
+      '<li>Tło, oświetlenie i ułożenie głowy sprawdzi fotograf.</li>';
+    const im = $('d-img'); im.src = url; im.hidden = false;
+  };
+  img.src = url;
+});
+$('d-wyslij').addEventListener('click', () => { $('d-ok').hidden = false; });
+
+/* --- Renowacja: suwak i wycena --- */
+const sw = $('suwak-in');
+sw.addEventListener('input', () => {
+  $('suwak-old').style.clipPath = 'inset(0 ' + (100 - sw.value) + '% 0 0)';
+  $('suwak').style.setProperty('--x', sw.value + '%');
+});
+function wycena(){
+  const baza = parseFloat(document.querySelector('input[name="r-stan"]:checked').value);
+  const osoby = Math.max(1, parseInt($('r-osoby').value) || 1);
+  const dod = [...document.querySelectorAll('#wycena input[data-c]:checked')].reduce((s, c) => s + parseFloat(c.dataset.c), 0);
+  const zaOsoby = Math.max(0, osoby - 2) * 15;
+  $('r-suma').textContent = (baza + zaOsoby + dod) + ' zł';
+}
+document.querySelectorAll('#wycena input').forEach(i => i.addEventListener('input', wycena));
+wycena();
+})();
+</script>
+</body>
+</html>
